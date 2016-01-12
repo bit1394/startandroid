@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">P0051_LayoutFile</string>
+    <string name="main">Этот ресурс из Main.xml</string>
+    <string name="myscreen">А это из myscreen.xml</string>
+    <string name="v_myscr">Вертикальная ориентация</string>
+    <string name="h_myscr">Горизонтальная ориентация</string>
+</resources>
