@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P011_ResValues</string>
+    <string name="newText">А вот и поменялась!</string>
+    <string name="btnText"> ALARM!!!</string>
+</resources>
