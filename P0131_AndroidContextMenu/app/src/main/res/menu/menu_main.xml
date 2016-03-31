@@ -6,7 +6,7 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/item1"
         android:orderInCategory="100"
