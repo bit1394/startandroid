@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P0181_DynamicLayouts3</string>
+    <string name="btn1">Button1</string>
+    <string name="btn2">Button2</string>
+</resources>
