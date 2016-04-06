@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">P0171_DynamicLayout</string>
+    <string name="rbLeft">Left</string>
+    <string name="rbCenter">Center</string>
+    <string name="rbRight">Right</string>
+    <string name="btnCreate">Create</string>
+    <string name="btnClear">Clear</string>
+</resources>
