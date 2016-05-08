@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ru.bitreslab.p0361_sqlitequery.Main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Справочник стран"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Все записи"
+        android:id="@+id/btnAll"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Функция"
+        android:id="@+id/btnFunc"
+        android:layout_below="@+id/btnAll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="население"
+        android:id="@+id/btnPeople"
+        android:layout_below="@+id/btnFunc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="население по региону"
+        android:id="@+id/btnGroup"
+        android:layout_below="@+id/btnPeople"
+        android:layout_alignLeft="@+id/btnPeople"
+        android:layout_alignStart="@+id/btnPeople" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="население по региону >"
+        android:id="@+id/btnHaving"
+        android:layout_below="@+id/btnGroup"
+        android:layout_alignLeft="@+id/btnGroup"
+        android:layout_alignStart="@+id/btnGroup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сортировка"
+        android:id="@+id/btnSort"
+        android:layout_below="@+id/btnHaving"
+        android:layout_alignLeft="@+id/btnHaving"
+        android:layout_alignStart="@+id/btnHaving" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFunc"
+        android:layout_above="@+id/btnPeople"
+        android:layout_toRightOf="@+id/btnHaving"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPeople"
+        android:layout_above="@+id/btnGroup"
+        android:layout_alignLeft="@+id/etFunc"
+        android:layout_alignStart="@+id/etFunc"
+        android:layout_alignRight="@+id/etFunc"
+        android:layout_alignEnd="@+id/etFunc" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRegionPeople"
+        android:layout_alignBottom="@+id/btnHaving"
+        android:layout_toRightOf="@+id/btnHaving"
+        android:layout_alignRight="@+id/etPeople"
+        android:layout_alignEnd="@+id/etPeople"
+        android:numeric="integer|decimal" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnHaving"
+        android:layout_toRightOf="@+id/btnGroup"
+        android:layout_toEndOf="@+id/btnGroup"
+        android:id="@+id/rgSort">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Наименование"
+            android:id="@+id/rName"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Население"
+            android:id="@+id/rPeople"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регион"
+            android:id="@+id/rRegion"
+            android:checked="false" />
+    </RadioGroup>
+</RelativeLayout>
