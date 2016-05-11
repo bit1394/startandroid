@@ -21,6 +21,13 @@ public class DBHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL("create table " + TABLE_COUNTRY
+        + "(" + KEY_ID
+        + " integer primary key, "
+        + KEY_NAME + " text, "
+        + KEY_PEOPLE + " integer, "
+        + KEY_REGION + " text"
+        + ");");
 
     }
 
