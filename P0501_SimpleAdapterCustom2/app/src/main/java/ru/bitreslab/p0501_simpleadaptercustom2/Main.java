@@ -1,9 +1,8 @@
 package ru.bitreslab.p0501_simpleadaptercustom2;
 
-import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.ListViewCompat;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -16,7 +15,7 @@ import java.util.Map;
 import static android.R.attr.data;
 import static android.R.attr.theme;
 
-public class Main extends AppCompatActivity {
+public class Main extends Activity {
     final String ATTRIBUTE_NAME_TEXT = "text";
     final String ATTRIBUTE_NAME_PB = "pb";
     final String ATTRIBUTE_NAME_LL = "ll";
@@ -24,11 +23,11 @@ public class Main extends AppCompatActivity {
     ListView lvSimple;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        int load[] = {41, 48, 22, 35, 20, 67, 51, 88};
+        int load[] = {41, 48, 22, 35, 30, 67, 51, 88};
         ArrayList<Map<String, Object>> data = new ArrayList<Map<String, Object>>(load.length);
         Map<String, Object> m;
         for(int i = 0; i < load.length; i++){
@@ -56,22 +55,18 @@ public class Main extends AppCompatActivity {
         int green = getResources().getColor(R.color.Green);
 
         @Override
-        public boolean setViewValue (View view, Object date, String textRepresentation){
+        public boolean setViewValue (View view, Object data, String textRepresentation){
             int i = 0;
             switch (view.getId()){
                 case R.id.llLoad:
                     i = ((Integer) data).intValue();
-                    if (i < 40)
-                        view.setBackgroundColor(green);
-                        else
-                            if (i < 70)
-                                view.setBackgroundColor(orange);
-                            else
-                             view.setBackgroundColor(orange);
+                    if (i < 40) view.setBackgroundColor(green);
+                        else if (i < 70) view.setBackgroundColor(orange);
+                            else view.setBackgroundColor(red);
                     return true;
                 case R.id.pbLoad:
                     i = ((Integer) data).intValue();
-                    ((ProgressBar) view).setProgress(i);
+                    ((ProgressBar)view).setProgress(i);
                     return true;
             }
             return false;
