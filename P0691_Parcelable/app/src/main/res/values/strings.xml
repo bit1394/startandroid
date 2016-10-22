@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">P0691_Parcelable</string>
+    <string name="main">Main</string>
+    <string name="second">Second</string>
+    <string name="send">Send</string>
+    <string name="title_activity_second">Second</string>
+</resources>
