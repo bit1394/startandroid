@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="CBox1"
+        android:key="chb1"
+        android:summaryOn="Enable. GO!"
+        android:summaryOff="Go away" />
+    <ListPreference
+        android:title="List"
+        android:entries="@array/entries"
+        android:entryValues="@array/entry_values"
+        android:key="lp"
+        android:dependency="chb1" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:title="CBox2"
+        android:key="chb2" />
+    <PreferenceScreen
+        android:key="scr2"
+        android:title="scrrrrr2"
+        android:dependency="chb2">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="CBox3"
+            android:key="chb3" />
+        <PreferenceCategory
+            android:title="Preference category"
+            android:key="categ1">
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:title="Check box preference"
+                android:key="chb4" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="categ2"
+            android:title="Preference category">
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:title="CBox5"
+                android:key="chb5" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:title="Check box preference"
+                android:key="chb6" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>
