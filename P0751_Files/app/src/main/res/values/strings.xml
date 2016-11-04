@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">P0751_Files</string>
+    <string name="write">Записать файл в файловую систему</string>
+    <string name="read">Прочитать файл из файловой системы</string>
+    <string name="writeSD">Записать файл на карту SD</string>
+    <string name="readSD">Прочитать файл с карты SD</string>
+</resources>
