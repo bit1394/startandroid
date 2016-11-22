@@ -43,7 +43,7 @@ public class Main extends AppCompatActivity {
                     case CONNECTING:
                         btnConnect.setEnabled(false);
                         pbConnect.setVisibility(View.VISIBLE);
-                        tvStatus.setText("Connecting...");
+                        tvStatus.setText("Connecting");
                         break;
                     case CONNECTED:
                         pbConnect.setVisibility(View.GONE);
