@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P0921_ServiceSimple</string>
+    <string name="startService">Start SERVICE</string>
+    <string name="stopService">Stop SERVICE</string>
+</resources>
