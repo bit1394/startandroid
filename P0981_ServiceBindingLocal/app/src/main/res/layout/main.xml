@@ -26,16 +26,6 @@
         android:onClick="onClickUp" />
 
     <Button
-        android:text="@string/down"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnUp"
-        android:layout_toRightOf="@+id/tvInterval"
-        android:layout_toEndOf="@+id/tvInterval"
-        android:id="@+id/btnDown"
-        android:onClick="onClickDown" />
-
-    <Button
         android:text="@string/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,4 +34,14 @@
         android:onClick="onClickStart"
         android:layout_below="@+id/tvInterval"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDown"
+        android:onClick="onClickDown"
+        android:layout_below="@+id/btnUp"
+        android:layout_alignLeft="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart" />
 </RelativeLayout>

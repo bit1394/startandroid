@@ -23,7 +23,6 @@ public class MyService extends Service {
         shedule();
     }
 
-
     void shedule(){
         if(tTask != null) tTask.cancel();
         if(interval > 0){
