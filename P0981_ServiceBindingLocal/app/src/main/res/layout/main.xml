@@ -16,17 +16,6 @@
         android:id="@+id/tvInterval" />
 
     <Button
-        android:text="@string/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvInterval"
-        android:layout_toRightOf="@+id/tvInterval"
-        android:layout_toEndOf="@+id/tvInterval"
-        android:layout_marginTop="35dp"
-        android:id="@+id/btnStart"
-        android:onClick="onClickStart" />
-
-    <Button
         android:text="@string/up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,4 +34,14 @@
         android:layout_toEndOf="@+id/tvInterval"
         android:id="@+id/btnDown"
         android:onClick="onClickDown" />
+
+    <Button
+        android:text="@string/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/btnStart"
+        android:onClick="onClickStart"
+        android:layout_below="@+id/tvInterval"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
