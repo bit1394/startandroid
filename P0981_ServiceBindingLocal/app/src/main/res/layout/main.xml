@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ru.bitreslab.p0981_servicebindinglocal.Main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInterval" />
+
+    <Button
+        android:text="@string/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInterval"
+        android:layout_toRightOf="@+id/tvInterval"
+        android:layout_toEndOf="@+id/tvInterval"
+        android:layout_marginTop="35dp"
+        android:id="@+id/btnStart"
+        android:onClick="onClickStart" />
+
+    <Button
+        android:text="@string/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:layout_toRightOf="@+id/tvInterval"
+        android:layout_toEndOf="@+id/tvInterval"
+        android:id="@+id/btnUp"
+        android:onClick="onClickUp" />
+
+    <Button
+        android:text="@string/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUp"
+        android:layout_toRightOf="@+id/tvInterval"
+        android:layout_toEndOf="@+id/tvInterval"
+        android:id="@+id/btnDown"
+        android:onClick="onClickDown" />
+</RelativeLayout>
