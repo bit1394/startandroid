@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ru.bitreslab.p1051_fragmentdynamic.Main">
 
+
     <Button
         android:text="@string/remove"
         android:layout_width="wrap_content"

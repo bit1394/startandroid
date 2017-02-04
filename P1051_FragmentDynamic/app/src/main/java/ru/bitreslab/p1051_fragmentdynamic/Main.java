@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.CheckBox;
 
 public class Main extends FragmentActivity {
+
     Fragment1 frag1;
     Fragment2 frag2;
     FragmentTransaction fTrans;
