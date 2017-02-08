@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">P1061_FragmentActivity</string>
+    <string name="frag_text1">Fragment 1</string>
+    <string name="frag_text2">Fragment 2</string>
+    <string name="send">Send</string>
+    <string name="find">Find</string>
+</resources>
