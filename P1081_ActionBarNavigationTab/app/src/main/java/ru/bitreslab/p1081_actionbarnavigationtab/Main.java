@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Main extends Activity implements android.support.v7.app.ActionBar.TabListener{
+public class Main extends AppCompatActivity implements android.support.v7.app.ActionBar.TabListener{
     final String LT = "myLogs";
 
     @Override
@@ -24,18 +24,18 @@ public class Main extends Activity implements android.support.v7.app.ActionBar.T
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        android.app.ActionBar bar = getActionBar();
+        android.support.v7.app.ActionBar bar = getSupportActionBar();
         //ActionBar bar = getActionBar();
         bar.setNavigationMode(android.app.ActionBar.NAVIGATION_MODE_TABS);
 
-        android.app.ActionBar.Tab tab = bar.newTab();
+        android.support.v7.app.ActionBar.Tab tab = bar.newTab();
         tab.setText("tab1");
-        tab.setTabListener((android.app.ActionBar.TabListener) this);
+        tab.setTabListener(this);
         bar.addTab(tab);
 
         tab = bar.newTab();
         tab.setText("tab2");
-        tab.setTabListener((android.app.ActionBar.TabListener) this);
+        tab.setTabListener(this);
         bar.addTab(tab);
     }
 
