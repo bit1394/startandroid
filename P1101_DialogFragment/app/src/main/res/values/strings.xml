@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">P1101_DialogFragment</string>
+    <string name="dialog1">Dialog 1</string>
+    <string name="dialog2">Dialog 2</string>
+    <string name="message_text">Text of your messgage</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
