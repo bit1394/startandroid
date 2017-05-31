@@ -1,84 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.bit.tipcalculator.Main">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TableLayout
-        android:id="@+id/mainTL"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:stretchColumns="3">
+        android:layout_weight="1"
+        android:background="#FFF"
+        android:padding="5dp"
+        android:stretchColumns="1, 2, 3">
 
         <TableRow
-            android:id="@+id/tRow0"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/billTV"
+                android:id="@+id/tvBill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/billTotal" />
 
             <EditText
                 android:id="@+id/billET"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
+                android:layout_span="3"
+                android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/tRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="10%" />
+
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="15%" />
+
+            <TextView
+                android:id="@+id/tv20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="20%" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tvTip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tenTV"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/ten" />
-
-            <TextView
-                android:id="@+id/fifteenTV"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/fifteen" />
-
-            <TextView
-                android:id="@+id/twentyTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/twenty" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tRow2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/tipTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:gravity="right"
                 android:text="@string/tipTV" />
 
             <EditText
@@ -87,8 +81,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
 
             <EditText
                 android:id="@+id/tip15ET"
@@ -96,8 +91,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
 
             <EditText
                 android:id="@+id/tip20ET"
@@ -105,20 +101,21 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
 
         </TableRow>
 
         <TableRow
-            android:id="@+id/tRow3"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/tvTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:gravity="right"
                 android:text="@string/totalTV" />
 
             <EditText
@@ -127,8 +124,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
 
             <EditText
                 android:id="@+id/total15ET"
@@ -136,8 +134,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
 
             <EditText
                 android:id="@+id/total20ET"
@@ -145,71 +144,86 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
         </TableRow>
 
         <TableRow
-            android:id="@+id/tRow4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/customTV"
+                android:id="@+id/tvCustom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:gravity="right|center_vertical"
                 android:text="@string/customTV" />
 
             <SeekBar
-                android:id="@+id/seekBar"
+                android:id="@+id/seekBar3"
+                style="@style/Widget.AppCompat.SeekBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
-
-            <TextView
-                android:id="@+id/tipValTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_span="3"
                 android:layout_weight="1"
-                android:text="TextView" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tRow5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:max="50"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:progress="18"
+                android:focusable="false"/>
 
             <TextView
                 android:id="@+id/tipCustomTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:text="18%" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCustTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
                 android:text="@string/tipCustTV" />
 
             <EditText
-                android:id="@+id/tipCustET"
+                android:id="@+id/tipCustomET"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
 
             <TextView
-                android:id="@+id/totalCustomTV"
+                android:id="@+id/tvCustTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
                 android:text="@string/totalCustTV" />
 
             <EditText
-                android:id="@+id/totalCustET"
+                android:id="@+id/totalCustomET"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="@string/zero" />
         </TableRow>
     </TableLayout>
-
 </LinearLayout>

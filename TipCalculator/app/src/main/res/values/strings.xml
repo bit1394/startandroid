@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">TipCalculator</string>
-    <string name="billTotal">Общий счет</string>
-    <string name="ten">10%</string>
-    <string name="fifteen">15%</string>
-    <string name="twenty">20%</string>
-    <string name="tipTV">Чаевые</string>
-    <string name="totalTV">Всего</string>
-    <string name="customTV">Установить</string>
-    <string name="tipCustTV">Установленные чаевые</string>
-    <string name="totalCustTV">Счет</string>
+    <string name="billTotal">Total Bill</string>
+    <string name="tipTV">Tip</string>
+    <string name="totalTV">Total</string>
+    <string name="customTV">Custom</string>
+    <string name="tipCustTV">Tip</string>
+    <string name="totalCustTV">Total</string>
+    <string name="zero">0.00</string>
 </resources>
