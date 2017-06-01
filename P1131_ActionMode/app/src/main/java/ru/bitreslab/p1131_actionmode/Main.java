@@ -41,7 +41,7 @@ public class Main extends Activity {
 
         @Override
         public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-            Toast.makeText(Main.this, "item " + item.getTitle(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(Main.this, item.getTitle(), Toast.LENGTH_SHORT).show();
             return false;
         }
 
