@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Main  extends FragmentActivity implements TitleFragment.onItemClickListener{
+public class Main  extends FragmentActivity implements TitleFragment.onItemClickListener {
     int position = 0;
     boolean withDetails = true;
 

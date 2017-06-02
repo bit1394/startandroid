@@ -8,20 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class DetailsFragment extends Fragment {
-
-
-    public DetailsFragment() {
-        // Required empty public constructor
-    }
-
 
     public static DetailsFragment newInstance(int pos){
         DetailsFragment details = new DetailsFragment();
-
         Bundle args = new Bundle();
         args.putInt("position", pos);
         details.setArguments(args);

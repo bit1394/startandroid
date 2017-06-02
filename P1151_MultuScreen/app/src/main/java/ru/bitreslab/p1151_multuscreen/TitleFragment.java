@@ -16,15 +16,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class TitleFragment extends ListFragment {
 
-
-    public TitleFragment() {
-        // Required empty public constructor
-    }
 
     public interface onItemClickListener {
         public void itemClick(int position);
@@ -49,14 +42,6 @@ public class TitleFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         listener.itemClick(position);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
     }
 
 }
