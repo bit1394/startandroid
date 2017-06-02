@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">P1151_MultuScreen</string>
+    <string-array name="headers">
+        <item>Header 1</item>
+        <item>Header 2</item>
+        <item>Header 3</item>
+        <item>Header 4</item>
+    </string-array>
+    <string-array name="context">
+        <item>Context 1</item>
+        <item>Context 2</item>
+        <item>Context 3</item>
+        <item>Context 4</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
